@@ -8,7 +8,7 @@ var options = {
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'XXX',
+    password: 'root',
     database: 'jianshu'
 }
 

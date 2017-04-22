@@ -67,7 +67,7 @@ module.exports = function (app) {
                 status: 0,
                 message: '加载失败'
             }
-            appResponse(resultObj)
+            appResponse(res, JSON.stringify(resultObj))
         })
     })
 }
