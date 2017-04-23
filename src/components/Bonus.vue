@@ -74,7 +74,7 @@
     }
 
     .rightbar nav {
-      width: 100px;
+      width: 120px;
       height: 100px;
       right: 100%;
       position: absolute;

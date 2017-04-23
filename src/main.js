@@ -14,6 +14,7 @@ import SpecialList from './components/SpecialList.vue'
 import Download from './components/Download.vue'
 import Article from './components/Article.vue'
 import writeArticle from './components/WriteArticle.vue'
+import licenseArticle from './components/LicenseArticle.vue'
 
 import VueQuillEditor from 'vue-quill-editor'
 
@@ -52,6 +53,9 @@ const router = new VueRouter({
     }, {
         path: '/write',
         component: writeArticle
+    }, {
+        path: '/license',
+        component: licenseArticle
     }, {
         path: '/*',
         redirect: '/home/article/hot'

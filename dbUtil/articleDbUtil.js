@@ -62,7 +62,7 @@ articleDbUtil.loadArticle = function (id) {
 articleDbUtil.loadArticleByType = function (type) {
     var promise = new Promise(function (resolve, reject) {
         connection.connect(function () {
-            var sql = 'select a.*, u.nickname from article as a, users as u where a.user_id = u.id'
+            var sql = 'select a.*, u.nickname from article as a, users as u where a.user_id = u.id order by publish_time desc'
             var params = []
             connection.query(sql, function (error, response) {
                 if (error) {
